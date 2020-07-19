@@ -1,0 +1,27 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid-types{
+    display: inline-grid;
+    height: 50%;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "canva-draw canva-btn";
+    text-align: center;
+}
+
+#canva-draw{
+    margin: auto;
+    grid-area: canva-draw;
+}
+
+#canva-btn{
+    grid-area: canva-btn;
+}
